@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:background="@color/white"
+    tools:context=".AddPoetry">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        app:title="Add Poetry"
+        android:background="@color/purple_200"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp"
+        android:layout_marginTop="5dp"
+        android:hint="Add Poetry data"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textColorHint="@color/hint"
+        android:paddingHorizontal="5dp"
+        android:id="@+id/addPoetryDataEdt"
+        android:background="@drawable/edit_text_bg_design"
+        />
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp"
+        android:layout_marginTop="5dp"
+        android:hint="Add Poet Name"
+        android:paddingHorizontal="5dp"
+        android:id="@+id/addPoetNameEdt"
+        android:textColor="@color/black"
+        android:textColorHint="@color/hint"
+        android:background="@drawable/edit_text_bg_design"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:id="@+id/submitBtn"/>
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdatePoetry"
+    android:orientation="vertical"
+    android:layout_margin="5dp"
+    android:background="@color/white">
+
+    <androidx.appcompat.widget.Toolbar
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/toolbar"
+        app:title="Update Poetry"
+        android:background="@color/purple_200"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp"
+        android:layout_marginTop="5dp"
+        android:hint="Update Poetry Data"
+        android:inputType="text"
+        android:textColor="@color/black"
+        android:textColorHint="@color/hint"
+        android:paddingHorizontal="5dp"
+        android:id="@+id/updatePoetryDataEdt"
+        android:background="@drawable/edit_text_bg_design"
+        />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="5dp"
+        android:id="@+id/submitBtn"/>
+
+</LinearLayout>
